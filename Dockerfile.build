@@ -1,0 +1,6 @@
+FROM golang:alpine
+COPY src /go/src/fullstack/src
+COPY vendor /go/src/fullstack/vendor
+WORKDIR /go/src/fullstack
+RUN apk add --no-cache --virtual .build-deps git; \
+  go build -o app src/go/server.go;

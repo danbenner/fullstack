@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LOCAL",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            // "program": "${fileDirname}",
+            "program": "${workspaceRoot}/src/go/server.go",
+            "env": {
+                "ENV": "LOCAL",
+                "PORT": "8081",
+                "API_URL": "http://127.0.0.1:8080/",
+                "API_BASIC_AUTH": "",
+                "BASE_API_URL": "http://127.0.0.1:8081/",
+                "SSO_AUTH_URL": "",
+                "SSO_TOKEN_URL": "",
+                "SSO_CLIENTID": "",
+                "SSO_CLIENTSECRET": "",
+                "MSSQL_SERVER": "",
+                "MSSQL_DATABASE": "",
+                "MSSQL_TABLE": "",
+                "MSSQL_USER": "",
+                "MSSQL_PASSWORD": "",
+                "MDB_USER": "",
+                "MDB_PASS": "",
+                "MDB_SERVERS": "",
+                "MDB_TABLE": "",
+                "MDB_NAME": "",
+                "MDB_URL": "",
+                "HTTP_CONNECTION_TIMEOUT_MS": "2000",
+                "WORKROOT": "${workspaceRoot}/dist"
+            },
+            "args": []
+        },
+    ]
+}

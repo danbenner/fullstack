@@ -1,0 +1,6 @@
+FROM alpine:latest
+WORKDIR /root/
+COPY app .
+COPY dist/assets assets
+RUN ls -al
+CMD ["./app"]
