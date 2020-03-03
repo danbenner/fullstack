@@ -7,7 +7,6 @@ import CustomTextField from './CustomTextField';
 import CustomSelect from './CustomSelect';
 import ReviewForm from './ReviewForm';
 // ------------------------------------------------------------------//
-// Get user's CN# & AD Groups
 const cookies = new Cookies();
 // NOTE: This allows for the removal of the only environment variable
 const HOSTNAME = window && window.location && window.location.hostname;
