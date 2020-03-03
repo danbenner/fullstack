@@ -1,19 +1,19 @@
 // CheckHostname ... This removes an environment variable
 export function CheckHostname(hostname) {
   if (hostname === '127.0.0.1' || hostname === 'localhost') {
-    return 'http://127.0.0.1:8081/'; // root url to loyalty-rewards-api (local instance)
-  } if (hostname === 'fullstack.dev-rancher.centene.com') {
-    return 'https://fullstack.dev-rancher.centene.com/'; // (CAPI - dev instance)
-  } if (hostname === 'fullstack.test-rancher.centene.com') {
-    return 'https://fullstack.test-rancher.centene.com/'; // (CAPI - test instance)
-  } if (hostname === 'fullstack.rancher.centene.com') {
-    return 'https://fullstack.rancher.centene.com/'; // (CAPI - prod instance)
-  } if (hostname === 'fullstack.ckp-dev.centene.com') {
-    return 'https://fullstack.ckp-dev.centene.com/'; // (POTS - dev instance)
-  } if (hostname === 'fullstack.ckp-test.centene.com') {
-    return 'https://fullstack.ckp-test.centene.com/'; // (POTS - test instance)
-  } if (hostname === 'fullstack.ckp.centene.com') {
-    return 'https://fullstack.ckp.centene.com/'; // (POTS - prod instance)
+    return 'http://127.0.0.1:8081/';
+  } if (hostname === 'fullstack.com') {
+    return 'https://fullstack.com/';
+  } if (hostname === 'fullstack.test.com') {
+    return 'https://fullstack.test.com/';
+  } if (hostname === 'fullstack.com') {
+    return 'https://fullstack.com/';
+  } if (hostname === 'fullstack.dev.com') {
+    return 'https://fullstack.dev.com/';
+  } if (hostname === 'fullstack.test.com') {
+    return 'https://fullstack.test.com/';
+  } if (hostname === 'fullstack.com') {
+    return 'https://fullstack.com/';
   }
   // DEFAULT
   return 'http://127.0.0.1:8081/';
